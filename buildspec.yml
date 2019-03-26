@@ -18,10 +18,10 @@ phases:
       - apt-get update -y
       - apt-get install nodejs -y
       - apt-get install npm -y
-      - npm install
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
+      - npm install
   build:
     commands:
       - echo Build started on `date`
