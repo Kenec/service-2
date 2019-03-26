@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
   const minutes = today.getUTCMinutes();
   const seconds = today.getUTCSeconds();
 
-  res.status(200).send({ time: `${hour}:${minutes}:${seconds}` }) 
+  res.status(200).send(`${hour}:${minutes}:${seconds}`) 
 });
 
 app.listen(process.env.PORT || 3000, () => {
