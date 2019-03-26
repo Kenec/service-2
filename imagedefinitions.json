@@ -1,0 +1,6 @@
+[
+  {
+      "name": "time-app-container",
+      "imageUri": "839162139045.dkr.ecr.us-east-2.amazonaws.com/time_app-repository:latest"
+  }
+]
