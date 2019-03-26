@@ -16,6 +16,7 @@ phases:
       - apt-get install -y software-properties-common
       - add-apt-repository ppa:openjdk-r/ppa
       - apt-get update -y
+      - apt install nodejs npm -y
       - npm install
   pre_build:
     commands:
