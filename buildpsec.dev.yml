@@ -6,10 +6,11 @@ phases:
     commands:
       # variable
       - REPOSITORY_URI=839162139045.dkr.ecr.us-east-2.amazonaws.com/time_app-repository
+      - CONTAINER=dev-time-app-container
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${COMMIT_HASH:=latest}
-      - CONTAINER=time-app-container
       - echo $AWS_DEFAULT_REGION
+      - echo $
       # Installation
       - echo Entered the install phase...
       - apt-get update -y
